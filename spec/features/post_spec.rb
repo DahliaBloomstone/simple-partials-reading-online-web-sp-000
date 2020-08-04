@@ -28,15 +28,5 @@ describe 'form' do
 
   end
 
-  it 'shows an edit form that submits content and redirects and prints out params' do
 
-    visit edit_post_path(@post)
-
-    fill_in 'title', with: "My edit"
-    fill_in 'description', with: "My post description"
-
-    click_on "Submit Post"
-
-    expect(page).to have_content("My edit")
-  end
 end
